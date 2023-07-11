@@ -63,3 +63,19 @@
 
 
 ```
+
+
+```bash
+   61  ls
+   62  cd ..
+   63  nano README.md
+   64  git add .
+   65  git status
+   66  git commit -m "first commit"
+   67  git push
+   68  git checkout -b dev
+   69  git checkout -b test
+   70  git checkout dev
+   71  git branch -d test
+   72  history
+```
