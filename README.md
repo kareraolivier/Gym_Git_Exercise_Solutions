@@ -349,4 +349,42 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>nano README.md
 
 C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>nano README.md
 
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>git stash pop
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (fd72266075329314f745c4eaa78ca774220230d6)
+
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>git reset --hard
+HEAD is now at 5e64794 home & about pages
+
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+
+C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>
+
+
+
 ```
