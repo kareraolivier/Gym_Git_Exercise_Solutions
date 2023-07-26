@@ -349,7 +349,4 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>nano README.md
 
 C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>nano README.md
 
-
-
-
 ```
