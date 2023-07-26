@@ -64,8 +64,6 @@
 
 ```
 
-
-
 ```bash
    61  ls
    62  cd ..
@@ -80,6 +78,7 @@
    71  git branch -d test
    72  history
 ```
+
 ## Excercise II
 
 ```bash
@@ -405,11 +404,9 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>
 
 ```
 
-
-## Bundle II 
+## Bundle II
 
 ### Excercise one
-
 
 ```bash
 
