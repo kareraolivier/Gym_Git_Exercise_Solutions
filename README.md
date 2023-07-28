@@ -404,3 +404,49 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>
 
 
 ```
+
+
+## Bundle II 
+
+### Excercise one
+
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano readme
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano readme
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano README.md
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git merge main
+Merge made by the 'ort' strategy.
+ README.md | 202 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html |   0
+ 2 files changed, 202 insertions(+)
+ create mode 100644 home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+
+
+
+```
+
+### Excercise two
+
+```bash
+
+
+
+```
