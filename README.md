@@ -488,6 +488,215 @@ $ nano README.md
 
 ```bash
 
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 621 bytes | 51.00 KiB/s, done.
+From https://github.com/kareraolivier/Gym_Git_Exercise_Solutions
+   f14595e..30b2070  main       -> origin/main
+Updating f14595e..30b2070
+Fast-forward
+ README.md                          | 87 ++++++++++++++++++++++++++++++++++++++
+ project/{ => stash}/home.html      |  0
+ project/team.html                  |  0
+ project/about.html => service.html |  0
+ services.html                      |  3 ++
+ 5 files changed, 90 insertions(+)
+ rename project/{ => stash}/home.html (100%)
+ delete mode 100644 project/team.html
+ rename project/about.html => service.html (100%)
+ create mode 100644 services.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ nano service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git add .
+warning: in the working copy of 'service.html', LF will be replaced by CRLF the next time Git touches i
+t
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git commit -m "services change"
+[ft/service-redesign f7b6b8a] services change
+ 1 file changed, 1 insertion(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$   git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/Gym_Git_Exercise_Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ nano service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git add .
+warning: in the working copy of 'service.html', LF will be replaced by CRLF the next time Git touches i
+t
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git commit -m "service"
+[main 21a26ae] service
+ 1 file changed, 1 insertion(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+   30b2070..21a26ae  main -> main
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git diff
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git merge main
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git diff ft/service-redesign..main
+diff --git a/service.html b/service.html
+index 4a7db5e..9fc2ab3 100644
+--- a/service.html
++++ b/service.html
+@@ -1 +1 @@
+-my services
++sadfsetrrewtw
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git diff main...ft/service-redesign
+diff --git a/service.html b/service.html
+index e69de29..4a7db5e 100644
+--- a/service.html
++++ b/service.html
+@@ -0,0 +1 @@
++my services
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git status
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   service.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mintty.2023-07-28_17-54-22.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git pull origin main
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git merge --abort
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git pull origin main
+From https://github.com/kareraolivier/Gym_Git_Exercise_Solutions
+ * branch            main       -> FETCH_HEAD
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git diff main...ft/service-redesign
+diff --git a/service.html b/service.html
+index e69de29..4a7db5e 100644
+--- a/service.html
++++ b/service.html
+@@ -0,0 +1 @@
++my services
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git commit -m "changes"
+[ft/service-redesign d5ae694] changes
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git merge main
+Already up to date.
+
+The Gym@DESKTOP-PN6DN2V
 
 ```
