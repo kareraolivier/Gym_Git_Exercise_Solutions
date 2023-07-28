@@ -404,3 +404,90 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>
 
 
 ```
+
+
+## Bundle II 
+
+### Excercise one
+
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano readme
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano readme
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano README.md
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git merge main
+Merge made by the 'ort' strategy.
+ README.md | 202 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html |   0
+ 2 files changed, 202 insertions(+)
+ create mode 100644 home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano README.md
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ torch service.html
+bash: torch: command not found
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ tourch service.html
+bash: tourch: command not found
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ touch service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  service.html  services.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git commit -m "service"
+[ft/bundle-2 35b0426] service
+ 2 files changed, 46 insertions(+)
+ create mode 100644 service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 932 bytes | 932.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+   7bd1c72..35b0426  ft/bundle-2 -> ft/bundle-2
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ nano README.md
+
+
+
+```
+
+### Excercise two
+
+```bash
+
+
+
+```
