@@ -1,6 +1,6 @@
 # Gym_Git_Exercise_Solutions
 
-## Bundle II
+## Bundle I
 
 ### Excercise one
 
