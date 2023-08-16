@@ -1108,7 +1108,6 @@ The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
 
 ```
 
-
 ## Bundle III
 
 ```bash
@@ -1286,6 +1285,91 @@ The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/
 $ nano contact.html
 
 The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+
+
+```
+
+## BUNDLE III
+
+### Excercise 2
+
+```bash
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  service.html  services.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ nano home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ nano about.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+M       about.html
+M       home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git add .
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'home.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git commit -m "ft/home-page-redesign"
+[ft/home-page-redesign 3033f48] ft/home-page-redesign
+ 2 files changed, 6 insertions(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git push --set-upstream origiin ft/home-page-redesign
+fatal: 'origiin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 350 bytes | 175.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/Gym_Git_Exercise_Solutions/pull/new/ft/home-page-redesig
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$
 
 
 ```
