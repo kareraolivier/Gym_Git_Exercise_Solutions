@@ -933,6 +933,8 @@ $ git commit -m "Updated"
 [main 918a201] Updated
  1 file changed, 283 insertions(+), 226 deletions(-)
 
+ Hosted link: https://kareraolivier.github.io/Gym_Git_Exercise_Solutions/
+
 ```
 
 ### Excercise two
@@ -1107,7 +1109,6 @@ The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
 
 
 ```
-
 
 ## Bundle III
 
