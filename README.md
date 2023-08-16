@@ -64,8 +64,6 @@
 
 ```
 
-
-
 ```bash
    61  ls
    62  cd ..
@@ -80,6 +78,7 @@
    71  git branch -d test
    72  history
 ```
+
 ## Excercise II
 
 ```bash
@@ -405,11 +404,9 @@ C:\Users\The Gym\Desktop\TheGym\Gym_Git_Exercise_Solutions>
 
 ```
 
-
-## Bundle II 
+## Bundle II
 
 ### Excercise one
-
 
 ```bash
 
@@ -698,5 +695,411 @@ $ git merge main
 Already up to date.
 
 The Gym@DESKTOP-PN6DN2V
+
+```
+
+## Bundle vI
+
+### Excercise one
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git remote add git-copy https://github.com/kareraolivier/git-copy.git
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git commit -m "addidng repo"
+On branch main
+Your branch is behind 'origin/main' by 6 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git pull
+Updating 21a26ae..665e0bf
+Fast-forward
+ README.md     | 209 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ readme.save   |   1 +
+ service.html  |   1 +
+ services.html |   3 -
+ team.html     |   1 +
+ 5 files changed, 212 insertions(+), 3 deletions(-)
+ create mode 100644 readme.save
+ delete mode 100644 services.html
+ create mode 100644 team.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git commit -m "addidng repo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git push
+Everything up-to-date
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ cd ..
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ git remote add git-copy https://github.com/kareraolivier/git-copy.git
+fatal: not a git repository (or any of the parent directories): .git
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ git remote add git-copy https://github.com/kareraolivier/git-copy
+fatal: not a git repository (or any of the parent directories): .git
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ cd Gym_Git_Exercise_Solutions/
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git remote add git-copy https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+error: remote git-copy already exists.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ code .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+
+```
+
+### Excercise two
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  readme.save  service.html  team.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ nano home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ nano about.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'home.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m "changes"
+[ft/footer 2fe0a24] changes
+ 2 files changed, 2 insertions(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ nano home.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ nano about.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'home.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m "changes 2"
+[ft/footer c2dbf19] changes 2
+ 2 files changed, 4 insertions(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 630 bytes | 315.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/Gym_Git_Exercise_Solutions/pull/new/ft/footer
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 665e0bf..c2dbf19
+Fast-forward
+Squash commit -- not updating HEAD
+ about.html | 3 +++
+ home.html  | 3 +++
+ 2 files changed, 6 insertions(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git commit -m "changes"
+[ft/squashing 547cd25] changes
+ 2 files changed, 6 insertions(+)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 336 bytes | 168.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/Gym_Git_Exercise_Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+
+```
+
+## Bundle V
+
+### Excercise one
+
+```bash
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+$ cd ..
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ git clone https://github.com/kareraolivier/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93Receiving objects:  97% (104/107), 1.75
+Receiving objects: 100% (107/107), 1.95 MiB | 787.00 KiB/s, done.
+
+Resolving deltas: 100% (5/5), done.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ cd git-cafe-exercise/
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ code .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git commit -m "Updated"
+[main 918a201] Updated
+ 1 file changed, 283 insertions(+), 226 deletions(-)
+
+```
+
+### Excercise two
+
+```bash
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/squashing)
+$ cd ..
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ git clone https://github.com/kareraolivier/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93Receiving objects:  97% (104/107), 1.75
+Receiving objects: 100% (107/107), 1.95 MiB | 787.00 KiB/s, done.
+
+Resolving deltas: 100% (5/5), done.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ cd git-cafe-exercise/
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ code .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git commit -m "Updated"
+[main 918a201] Updated
+ 1 file changed, 283 insertions(+), 226 deletions(-)
+
+```
+
+## Bundle VI
+
+### Excercise one
+
+```bash
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git checkout -b new/feature
+Switched to a new branch 'new/feature'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+$ git commit -m "feature"
+[new/feature 50084ef] feature
+ 1 file changed, 206 insertions(+), 149 deletions(-)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+$ git push
+fatal: The current branch new/feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new/feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+$ git push --set-upstream origin new/feature
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.08 KiB | 1.08 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'new/feature' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/git-cafe-exercise/pull/new/new/feature
+remote:
+To https://github.com/kareraolivier/git-cafe-exercise.git
+ * [new branch]      new/feature -> new/feature
+branch 'new/feature' set up to track 'origin/new/feature'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+
+```
+
+### Excercise two
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (new/feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git checkout -b bug/fix
+Switched to a new branch 'bug/fix'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (bug/fix)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (bug/fix)
+$ git commit -m "bug-fix"
+[bug/fix 434e94c] bug-fix
+ 1 file changed, 172 insertions(+), 157 deletions(-)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (bug/fix)
+$ git push --set-upstream origin bug/fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.16 KiB | 1.16 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug/fix' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/git-cafe-exercise/pull/new/bug/fix
+remote:
+To https://github.com/kareraolivier/git-cafe-exercise.git
+ * [new branch]      bug/fix -> bug/fix
+branch 'bug/fix' set up to track 'origin/bug/fix'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (bug/fix)
+
+
+```
+
+### Excercise three
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (bug/fix)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (main)
+$ git checkout -b contact/fix
+Switched to a new branch 'contact/fix'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
+$ git add .
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
+$ git commit -m "contact-fix"
+[contact/fix 4fb3d7d] contact-fix
+ 1 file changed, 171 insertions(+), 156 deletions(-)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
+$ git push --set-upstream origin contact/fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.18 KiB | 1.18 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'contact/fix' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/git-cafe-exercise/pull/new/contact/fix
+remote:
+To https://github.com/kareraolivier/git-cafe-exercise.git
+ * [new branch]      contact/fix -> contact/fix
+branch 'contact/fix' set up to track 'origin/contact/fix'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
+
 
 ```
