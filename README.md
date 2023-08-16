@@ -1103,3 +1103,185 @@ The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/git-cafe-exercise (contact/fix)
 
 
 ```
+
+
+## Bundle III
+
+```bash
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ ls
+Airbnb/        ES6/                         Pinterest_clone/
+Airbnb_clone/  Gym_Git_Exercise_Solutions/  TheGym_GoldSmiths_Clone/
+Amazon_clone/  HBO_CLONE/                   TheGym_clone_materna_website/
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym
+$ cd Gym_Git_Exercise_Solutions/
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  readme.save  service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  readme.save  service.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ touch team.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ nano team.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ add .
+bash: add: command not found
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git add .
+warning: in the working copy of 'readme.save', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'team.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git commit -m "team"
+[ft/team-page 2b8b787] team
+ 2 files changed, 2 insertions(+)
+ create mode 100644 readme.save
+ create mode 100644 team.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 312 bytes | 312.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/kareraolivier/Gym_Git_Exercise_Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/kareraolivier/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git status
+On branch ft/team-page
+Your branch is up to date with 'origin/ft/team-page'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git log
+commit 21a26ae26da6f3bc11ac38fd0c3f3ffd152c5b7e (HEAD -> ft/contact-page, origin/main, origin/HEAD, mai
+n)
+Author: kareraolivier <kareraolivier@gmail.com>
+Date:   Fri Jul 28 17:54:39 2023 +0200
+
+    service
+
+commit 30b20708cdbb22c1655a536af0b9edf88df862e2
+Merge: f14595e 0812b92
+Author: kareraolivier <77101006+kareraolivier@users.noreply.github.com>
+Date:   Fri Jul 28 08:44:59 2023 -0700
+
+    Merge pull request #4 from kareraolivier/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 0812b9290abac697ba4c65391562ac2a3ae0f111 (origin/ft/bundle-2, ft/bundle-2)
+Author: kareraolivier <kareraolivier@gmail.com>
+Date:   Fri Jul 28 17:37:09 2023 +0200
+
+    service
+
+commit 35b0426c2e7b91ce02e828852ae19015a0cb2131
+Author: kareraolivier <kareraolivier@gmail.com>
+Date:   Fri Jul 28 17:35:38 2023 +0200
+
+    service
+
+commit c4b4b495eb15e9ea87910800a31bb5a599f33bf2
+Merge: 7bd1c72 f14595e
+Author: kareraolivier <kareraolivier@gmail.com>
+Date:   Fri Jul 28 17:26:17 2023 +0200
+
+    Merge branch 'main' into ft/bundle-2
+
+commit f14595ea4156d0e2967b5c50d1baf14eeb542a31
+Merge: 5e64794 434f7b1
+Author: kareraolivier <kareraolivier@gmail.com>
+cherry-pick command
+
+[ft/contact-page ca26937] cherry-pick command
+ Author: kareraolivier <77101006+kareraolivier@users.noreply.github.com>
+ Date: Wed Jul 26 03:01:10 2023 -0700
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ ls
+LICENSE  README.md  about.html  home.html  project/  service.html  services.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git cherry-pick "c04f53c6accb4f990b2012a116fcae11b997fd30"
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not apply c04f53c... Update README.md
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page|CHERRY-PICKING)
+$ git cherry-pick --continue
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+Update README.md
+
+[ft/contact-page 2ae098d] Update README.md
+ Author: kareraolivier <77101006+kareraolivier@users.noreply.github.com>
+ Date: Wed Jul 26 03:01:10 2023 -0700
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ touch contact.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ nano contact.html
+
+The Gym@DESKTOP-PN6DN2V MINGW64 ~/Desktop/TheGym/Gym_Git_Exercise_Solutions (ft/contact-page)
+
+
+```
